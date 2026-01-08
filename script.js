@@ -203,13 +203,48 @@ function initImageDragging() {
     });
 }
 
-// Initialize language switcher and image dragging when DOM is loaded
+// Timeline Card Expand/Collapse Functionality
+class TimelineCardExpander {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        const timelineCards = document.querySelectorAll('.timeline-card');
+        timelineCards.forEach(card => {
+            card.addEventListener('click', () => {
+                this.toggleExpand(card);
+            });
+        });
+    }
+
+    toggleExpand(card) {
+        // 如果卡片已经展开，则折叠它
+        if (card.classList.contains('expanded')) {
+            card.classList.remove('expanded');
+        } else {
+            // 先折叠所有其他卡片
+            const allCards = document.querySelectorAll('.timeline-card');
+            allCards.forEach(c => {
+                if (c !== card) {
+                    c.classList.remove('expanded');
+                }
+            });
+            // 展开当前卡片
+            card.classList.add('expanded');
+        }
+    }
+}
+
+// Initialize language switcher, image dragging, and timeline card expander when DOM is loaded
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         new LanguageSwitcher();
         initImageDragging();
+        new TimelineCardExpander();
     });
 } else {
     new LanguageSwitcher();
     initImageDragging();
+    new TimelineCardExpander();
 }
