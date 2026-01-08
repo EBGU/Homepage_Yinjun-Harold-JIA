@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yinjun Harold JIA - Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button id="en-btn" class="lang-btn active">EN</button>
+            <button id="zh-btn" class="lang-btn">中文</button>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-link active" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="publication.html" class="nav-link" data-en="Publications" data-zh="学术成果">Publications</a></li>
+                <li><a href="timeline.html" class="nav-link" data-en="Timeline" data-zh="时间线">Timeline</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="profile-photo">
+                    <img src="images/profile.jpg" alt="Yinjun Harold JIA">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name" data-en="Yinjun (Harold) JIA" data-zh="贾寅君">Yinjun (Harold) JIA</h1>
+                    <p class="title" data-en="PostDoc Researcher" data-zh="博士后研究员">PostDoc Researcher</p>
+                    <p class="institution">
+                        <a href="https://air.tsinghua.edu.cn" target="_blank" data-en="Tsinghua AIR" data-zh="清华智能产业研究院">Tsinghua AIR</a>
+                    </p>
+                    <p class="email">
+                        <a href="mailto:jiayinjun@air.tsinghua.edu.cn">jiayinjun@air.tsinghua.edu.cn</a>
+                        <br>
+                        <a href="mailto:jiayinjunharold@gmail.com">jiayinjunharold@gmail.com</a>
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/EBGU" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=y7j-CLUAAAAJ&hl=en" target="_blank" class="social-link" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Content -->
+            <main class="content">
+                <!-- About Section -->
+                <section class="section" id="about">
+                    <h2 class="section-title" data-en="About" data-zh="个人简介">About</h2>
+                    <p class="section-content" data-en="I am a Postdoctoral Researcher at THU-AIR and a Neuroscience PhD graduate from the IDG/McGovern Institute for Brain Research, Tsinghua University. Driven by a passion for <span class='highlight'>AI4Science</span>, my research focuses on using unsupervised learning and synthetic data to solve complex pharmaceutical and biological problems. See more about me via <a href='timeline.html'>Timeline</a>" data-zh="清华智能产业研究院博士后，清华麦戈文脑科学研究中心神经科学博士。目前深耕 <span class='highlight'>AI4Science</span> 领域，专注于通过无监督学习和合成数据探索前沿的生物医药课题。欢迎通过我的 <a href='timeline.html'>时间线</a> 来了解更多。">
+                        I am a Postdoctoral Researcher at THU-AIR and a Neuroscience PhD graduate from the IDG/McGovern Institute for Brain Research, Tsinghua University. Driven by a passion for <span class='highlight'>AI4Science</span>, my research focuses on using unsupervised learning and synthetic data to solve complex pharmaceutical and biological problems. See more about me via <a href='timeline.html'>Timeline</a>
+                    </p>
+                </section>
+
+                <!-- Work and Education Section -->
+                <section class="section" id="work-education">
+                    <h2 class="section-title" data-en="Work and Education" data-zh="工作与教育">Work and Education</h2>
+                    <div class="section-content">
+                        <div class="timeline-item">
+                            <h3 class="item-title" data-en="PostDoc Researcher" data-zh="博士后研究员">PostDoc Researcher</h3>
+                            <p class="item-organization" data-en="Institute for AI Industry Research (AIR)<br>Tsinghua University" data-zh="清华大学智能产业研究院">Institute for AI Industry Research (AIR)<br>Tsinghua University</p>
+                            <p class="item-date" data-en="2025.02 - Present" data-zh="2025年2月 - 至今">2025.02 - Present</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="item-title" data-en="Ph.D. in Neuroscience" data-zh="神经科学博士">Ph.D. in Neuroscience</h3>
+                            <p class="item-organization" data-en="IDG/McGovern Institute for Brain Research<br>Tsinghua University" data-zh="清华麦戈文脑科学研究中心">IDG/McGovern Institute for Brain Research<br>Tsinghua University</p>
+                            <p class="item-date" data-en="2020.09 – 2024.12" data-zh="2020年9月 – 2024年12月">2020.09 – 2024.12</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="item-title" data-en="B.S. in Life Sciences" data-zh="生命科学学士">B.S. in Life Sciences</h3>
+                            <p class="item-organization" data-en="School of Life Sciences<br>Tsinghua University" data-zh="清华大学生命科学学院">School of Life Sciences<br>Tsinghua University</p>
+                            <p class="item-date" data-en="2016.09 – 2020.06" data-zh="2016年9月 – 2020年6月">2016.09 – 2020.06</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Highlights Section -->
+                <section class="section" id="research-highlights">
+                    <h2 class="section-title" data-en="Research Highlights" data-zh="代表性工作">Research Highlights</h2>
+                    <div class="research-cards">
+                        <div class="research-card">
+                            <h3 class="card-title">Deep contrastive learning enables genome-wide virtual screening.</h3>
+                            <p class="card-authors"><strong>Yinjun Jia</strong>†, Bowen Gao†, Jiaxin Tan†, Jiqing Zheng†, Xin Hong†, Wenyu Zhu, Haichuan Tan, Yuan Xiao, Liping Tan, Hongyi Cai, Yanwen Huang, Zhiheng Deng, Xiangwei Wu, Yue Jin, Yafei Yuan, Jiekang Tian, Wei He, Weiying Ma, Yaqin Zhang, Lei Liu*, Chuangye Yan*, Wei Zhang*, Yanyan Lan* (<strong>Co-first Author</strong>)</p>
+                            <p class="card-journal">
+                                <i>Science</i> 2026 
+                                <span class="card-buttons">
+                                    <a href="https://drugclip.com/index" target="_blank" class="card-button" data-en="Demo" data-zh="Demo">Demo</a>
+                                    <a href="https://github.com/THU-ATOM/DrugCLIP_screen_pipeline" target="_blank" class="card-button" data-en="GitHub" data-zh="GitHub">GitHub</a>
+                                    <a href="https://doi.org/10.1126/science.ads9530" target="_blank" class="card-button" data-en="Paper" data-zh="Paper">Paper</a>
+                                </span>
+                            </p>
+                            <div class="card-image">
+                                <img src="images/research1.jpg" alt="Research Image 1">
+                            </div>
+                        </div>
+                        <div class="research-card">
+                            <h3 class="card-title">Manipulating 3D Molecules in a Fixed-Dimensional E(3)-Equivariant Latent Space.</h3>
+                            <p class="card-authors">Zitao Chen†, <strong>Yinjun Jia</strong>†*, Zitong Tian†, Wei-Ying Ma, Yanyan Lan* (<strong>Co-first and Co-corresponding Author</strong>)</p>
+                            <p class="card-journal">
+                                <i>NeurIPS</i> 2025 
+                                <span class="card-buttons">
+                                    <a href="https://github.com/MuZhao2333/MolFLAE" target="_blank" class="card-button" data-en="GitHub" data-zh="GitHub">GitHub</a>
+                                    <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/119753" target="_blank" class="card-button" data-en="Paper" data-zh="Paper">Paper</a>
+                                </span>
+                            </p>
+                            <div class="card-image">
+                                <img src="images/research2.jpg" alt="Research Image 2">
+                            </div>
+                        </div>
+                        <div class="research-card">
+                            <h3 class="card-title">Selfee, self-supervised features extraction of animal behaviors</h3>
+                            <p class="card-authors"><strong>Yinjun Jia</strong>*, Shuaishuai Li, Xuan Guo, Bo Lei, Junqiang Hu, Xiao-Hong Xu, Wei Zhang* (<strong>Co-corresponding Author</strong>)</p>
+                            <p class="card-journal">
+                                <i>eLife</i> 2022 
+                                <span class="card-buttons">
+                                    <a href="https://github.com/EBGU/Selfee" target="_blank" class="card-button" data-en="GitHub" data-zh="GitHub">GitHub</a>
+                                    <a href="https://elifesciences.org/articles/76218" target="_blank" class="card-button" data-en="Paper" data-zh="Paper">Paper</a>
+                                </span>
+                            </p>
+                            <div class="card-image">
+                                <img src="images/research3.jpg" alt="Research Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
