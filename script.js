@@ -70,10 +70,18 @@ class LanguageSwitcher {
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang && (savedLang === 'en' || savedLang === 'zh')) {
                 this.switchLanguage(savedLang);
+            } else {
+                // If no preference is saved or invalid, ensure we use English
+                this.currentLang = 'en';
+                this.updateButtonStates();
+                this.updateContent();
             }
         } catch (e) {
             // Ignore if localStorage is not available
             console.log('localStorage not available, using default language');
+            this.currentLang = 'en';
+            this.updateButtonStates();
+            this.updateContent();
         }
     }
 }
