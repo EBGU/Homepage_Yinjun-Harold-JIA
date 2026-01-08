@@ -16,6 +16,9 @@ class LanguageSwitcher {
 
         // Check for saved language preference
         this.loadLanguagePreference();
+        
+        // Initialize content to default language
+        this.updateContent();
     }
 
     switchLanguage(lang) {
